@@ -11,6 +11,8 @@
 
 Param(
   [string]$mode,
+  [string]$dictionaryPath,
+  [string]$zipPath,
   [string]$dictionaryFile,
   [string]$zipFile,
   [string]$help
@@ -140,11 +142,29 @@ If(-Not $isInstalled){
 	
 	##install 7z
 }
-
+$DICTIONARY
+$7zf
 set-alias sz "$env:ProgramFiles\7-Zip\7z.exe"
-$DICTIONARY = Get-Content -Path "$workingdir\$dictionaryFile"
-$7zf = "$workingdir\$zipFile"
-$7zp = "123456"
+
+If($dictionaryPath){
+	$DICTIONARY = Get-Content -Path "$dictionaryPath"
+}
+ElseIf($dictionaryFile){
+	$DICTIONARY = Get-Content -Path "$dictionaryFile"
+}
+Else{
+	Write-Color -Text "Wrong parameter. Please give either dictionaryFile or dictionaryPath" -Color Red -BackColor Black -LogFile "Log"
+}
+If($zipPath){
+	$7zf = "$zipPath"
+}
+ElseIf($zipFile){
+	$7zf = "$zipFile"
+}
+Else{
+	Write-Color -Text "Wrong parameter. Please give either zipFile or zipPath" -Color Red -BackColor Black -LogFile "Log"
+}
+
 $7zo = "-aoa"
 
 
