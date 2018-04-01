@@ -16,7 +16,7 @@ There are 2 types of usage. You can check them below:
 This command will show you parameters and some usage examples.
 
 
-Screenshot: ![alt text](https://github.com/menes-t/ZipCracker/tree/master/screenShots/help.png)
+Screenshot: ![alt text](screenShots/help.png)
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -40,6 +40,6 @@ Either `-zipPath` or `-zipFile` should be given.
 You can use __example.7z__ and __dictionary.txt__ files to try or you can download different dictionaries from [here](https://apasscracker.com/dictionaries/) or [here](http://www.zip-password-cracker.com/dictionaries.html).
 The password of given __example.7z__ is `123456`
 
-Screenshot: ![alt text](https://github.com/menes-t/ZipCracker/tree/master/screenShots/example.png)
+Screenshot: ![alt text](screenShots/example.png)
 
 ----------------------------------------------------------------------------------------------------------------------
