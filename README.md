@@ -42,4 +42,8 @@ The password of given __example.7z__ is `123456`
 
 Screenshot: ![alt text](screenShots/example.PNG)
 
+
+Note: Script creates a Log file at the end.
+PS2 does not support password protected zip file extraction. So I needed to use a third party app. 7z. 
+Script looks for whether 7z installed or not. If it is installed the proceeds. If not then downloads, installs,runs and uninstalls respectively.
 ----------------------------------------------------------------------------------------------------------------------
